@@ -12,6 +12,7 @@ define([
       expect(answers.and(true, false)).not.to.be.ok;
       expect(answers.and(true, true)).to.be.ok;
       expect(answers.and(3, 4)).to.be.ok;
+      expect(answers.and(5, 6)).to.be.ok;
     });
 
     it('you should be able to work with logical or', function() {
