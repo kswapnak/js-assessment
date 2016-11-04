@@ -9,15 +9,15 @@ define(function () {
 				console.log(start++);
 				if(start<=end)
 				{
-						timeout =	setTimeout(print,100);
+			    	timeout =	setTimeout(print,100);
 				}		
 			}
-		 print();
-		 return{
-			 cancel: function(){
-				  clearTimeout(timeout) && timeout;
+		    print();
+		    return{
+		    cancel: function(){
+				clearTimeout(timeout) && timeout;
 			 }
-		 };
+		  };
 		}
 	};
 });

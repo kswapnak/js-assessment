@@ -15,7 +15,8 @@ define([ 'jquery' ], function($) {
 		
 		 $.ajax(url).then(function(response)
 		 {
-			var names =  $.map(response.people,function(v){
+			var names =  $.map(response.people,function(v)
+            {
 					return v.name;
 			});
 		    dfd.resolve(names.sort());
